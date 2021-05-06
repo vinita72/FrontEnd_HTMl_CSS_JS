@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Consecutie string  containe nighter a not b</p>
+   
+<p id="demo"></p>
+
+<script>
+function includesMatch(lookupValue, testString){
+    var re = new RegExp(lookupValue); //Here the 'i' means that we are doing a case insensitive match
+    return testString.match(re) !== null
+}
+
+var lookupValue = "ab";
+var test1  = "efg";
+var test2  = "abadaba";
+
+document.getElementById("demo").innerHTML = includesMatch(lookupValue, test2);
+document.write = test2;
+
+</script>
+
+</body>
+</html>
