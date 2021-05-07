@@ -21,8 +21,12 @@
   <script>
   function myFunction() {
     var x = document.getElementById("myName").value;
-
-    document.getElementById("frm1").innerHTML = "Good Morninig! " +x;
+    if(x != 'Bob' && x!='Alise'){
+        document.getElementById("frm1").innerHTML = "Byee You! " +x;
+    } 
+    else {
+        document.getElementById("frm1").innerHTML = "Good Morninig! " +x;
+    }
   }
   </script>
 
