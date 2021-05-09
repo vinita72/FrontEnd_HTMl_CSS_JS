@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Click on the button below
+    </h1>
+
+<form id="frm1" >
+    Number: <input type="text" name="number" id="number"><br>
+
+    <button id="click" type="button" onclick = "myFunction()">CLICK ME</button>
+
+  </form>
+  
+  <script>
+
+    var person = {
+  fullName: function() {
+    x = document.getElementById("number").value;
+
+    return x*(x-1)*2;
+  }
+}
+  function myFunction() {
+    var c = person.fullName.call(person); 
+        document.getElementById("frm1").innerHTML = c;    
+  }
+  </script>
+
+
+
+</body>
+</html>
