@@ -7,20 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <p>Table </p>
-
+    <p>reverse number</p>
     <p id="demo"></p>
 
     <script>
+        var num = ["one", "two", "three", "four"];
 
-        const number = parseInt(prompt('Enter an integer: '));
-        for(i = 1; i <= 10; i++){
-            const result = i* number;
-            document.write(`${number} * ${i} = ${result}`);
-            document.write("<br>");
-
-        }
+        document.getElementById("demo").innerHTML = num.reverse();
 
     </script>
 </body>
