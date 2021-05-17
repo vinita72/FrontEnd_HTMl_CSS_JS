@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Convert a string written in JSON format, into a JavaScript object.</h2>
+
+        <p id="demo"></p>
+
+        <script>
+        var myJSON = '{ "name":"John", "lastName":"Bing", "city":"New York" }';
+        var myObj = JSON.parse(myJSON);
+        document.getElementById("demo").innerHTML = "I am " + myObj.name + myObj.lastName + ". I am from" +myObj.city;
+        </script>
+
+</body>
+</html>
