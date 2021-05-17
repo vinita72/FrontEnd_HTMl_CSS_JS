@@ -7,6 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <p>Rectangle class</p>
+    <p id="demo"></p>
+    <p id="display"> Area is </p>
+
+    <script>
+     class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+    }
+     
+            rectangle = new Rectangle(50, 20);
+            rectangle.height = 30;
+                document.getElementById("demo").innerHTML =
+                "Rectangle  width is " + rectangle.width + " and height is " + rectangle.height+ ".";
+
+                function Area(){
+
+                    var area = Math.sqrt(height*width);
+                    document.getElementById("display").innerHTML = area;
+
+                }
+            
+
+    </script>
 </body>
 </html>
