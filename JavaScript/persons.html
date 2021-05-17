@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>You can use person.property or person["property"].</p>
+
+
+        <script>
+
+        function person(fname, lname, age, dateOfBirth) {
+            this.fname = fname;
+            this.lname = lname;
+            this.age = age;
+            this.dateOfBirth = dateOfBirth;
+
+                }
+   
+            person1 = new person("amit", "bachan", 20, "20-1-1892")
+            person2 = new person("rohan", "harry", 21, "20-1-1998")
+    
+                    print = function(){
+
+                        document.write(person1.fname);   
+                     document.write(person2.lname);
+  
+                    }();
+                     
+ 
+    
+    
+    
+        </script>
+</body>
+</html>
